@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos con javascript | Parte 2</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <div class="header">
+        <a href="#default" class="logo">
+            <span class="logo">Daro🐱‍👤</span>
+        </a>
+        <div class="header-right">
+            <a href="https://github.com/OmarDarioMelendrez" target="_blank" ><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/omar-dario-melendrez/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+    <!-- END HEADER -->
+    
+    <div class="container">
+        <h1>Ejercicios de programación parte 4 | Matemáticas</h1>
+        
+    <!-- RETO NUMERO 1 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 1 | Multiplicar Decimales</h2>
+                <p>Pide a tu usuario que ingrese 2 números con decimales (cuantos más mejor) y muestra el resultado de multiplicarlos ¿fácil, no?</p>
+                <div class="input">
+                    <label for="reto-1-input-a">Ingrese un número decimal:</label>
+                    <input id="reto-1-input-a" type="text" placeholder="Primer número">
+                    <label for="reto-1-input-b">Ingrese otro número decimal:</label>
+                    <input id="reto-1-input-b" type="text" placeholder="Segundo número">
+                    <button class="big-button"  onclick="retoUno()" type="button" >Multiplicar!</button>
+                </div>
+                <div id="reto-1-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 2 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 2 | Reducir los decimales</h2>
+                <p>Pide a tu usuario que ingrese 2 números con decimales (cuantos más mejor) y muestra el resultado de multiplicarlos ¿fácil, no?</p>
+                <div class="input">
+                    <label for="reto-2-input-a">Ingrese un número decimal:</label>
+                    <input id="reto-2-input-a" type="text" placeholder="Primer número">
+                    <label for="reto-2-input-b">Ingrese otro número decimal:</label>
+                    <input id="reto-2-input-b" type="text" placeholder="Segundo número">
+                    <label for="reto-2-input-c">Indique a cantidad de decimales a utilizar:</label>
+                    <input id="reto-2-input-c" type="text" placeholder="Cantidad de decimales">
+                    <button class="big-button"  onclick="retoDos()" type="button" >Multiplicar!</button>
+                </div>
+                <div id="reto-2-resultado"></div>    
+            </div>
+        </section>
+
+        
+    <!-- RETO NUMERO 3 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 3 | Raíces cuadradas redondeadas</h2>
+                <p>Pide a tu usuario que ingrese un número, cuyo valor debe ser mayor a 20, luego calcula su raíz cuadrada y reduce a 2 o 3 decimales el resultado final.</p>
+                <div class="input">
+                    <label for="reto-3-input-a">Ingrese un número mayor que 20:</label>
+                    <input id="reto-3-input-a" type="text" placeholder="Mayor que 20">
+                    <label for="reto-3-input-b">Ingrese cantidad de decimales que desea:</label>
+                    <input id="reto-3-input-b" type="text" placeholder="cantidad de decimales">
+                    <button class="big-button"  onclick="retoTres()" type="button" >Calcular Raíz Cuadrada!</button>
+                </div>
+                <div id="reto-3-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 4 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 4 | Calcular área de un círculo</h2>
+                <p>Solicita a tu usuario que ingrese un número el cual será el radio de un círculo y con este dato calcula el área de un círculo.
+                    Si tu lenguaje cuenta con librerías específicas para este propósito haz uso de las mismas.</p>
+                <div class="input">
+                    <label for="reto-4-input-a">Indique el radio del circulo:</label>
+                    <input id="reto-4-input-a" type="text" placeholder="Indique el radio en cm">
+                    <label for="reto-4-input-b">Indique cantidad de decimales:</label>
+                    <input id="reto-4-input-b" type="text" placeholder="cantidad de decimales">
+                    <button class="big-button"  onclick="retoCuatro()" type="button" >Calcular Area del circulo</button>
+                </div>
+                <div id="reto-4-resultado"></div>    
+            </div>
+        </section>
+        
+    <!-- RETO NUMERO 5 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 5 | Calcular volúmen de un cilindro</h2>
+                <p>Pide a tu usuario que indique el radio y la profundidad de un cilindro. Después aplica la fórmula correspondiente para calcular el volumen del cilindro y reduce el resultado a un solo decimal.</p>
+                <div class="input">
+                    <label for="reto-5-input-a">Indique el radio del cilindro:</label>
+                    <input id="reto-5-input-a" type="text" placeholder="Indique el radio en cm">
+                    <label for="reto-5-input-b">Indique altura del cilindro:</label>
+                    <input id="reto-5-input-b" type="text" placeholder="Indique altura del cilindro en cm">
+                    <button class="big-button"  onclick="retoCinco()" type="button" >Calcular volumen del cilindro!</button>
+                </div>
+                <div id="reto-5-resultado"></div>    
+            </div>
+        </section>
+
+        
+    <!-- RETO NUMERO 6 -->
+        <section class="retos">
+            <div class="row">
+                <h2>RETO 6 | Mostrar enteros y residuos</h2>
+                <p>Pide al usuario que ingrese 2 números, divídelos, muestra un resultado como enteros y además el residuo por separado de una forma que seal fácil de entender al usuario.
+                    Por ejemplo: “9 dividido entre 2 es 4 y sobra 1”.</p>
+                <div class="input">
+                    <label for="reto-6-input-a">Indique número a dividir:</label>
+                    <input id="reto-6-input-a" type="text" placeholder="A dividir">
+                    <label for="reto-6-input-b">Indique número divisor:</label>
+                    <input id="reto-6-input-b" type="text" placeholder="Divisor">
+                    <button class="big-button"  onclick="retoSeis()" type="button" >Dividamos!</button>
+                </div>
+                <div id="reto-6-resultado"></div>    
+            </div>
+        </section>
+
+        <section class="social">
+            <ul class="social-list">
+              <li><a href="https://github.com/OmarDarioMelendrez" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/omar-dario-melendrez/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+          </section>
+
+    </div>
+    
+    <script src="./js/retos.js"></script>
+</body>
+</html>
